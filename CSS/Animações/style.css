@@ -1,0 +1,42 @@
+#box1{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    font-size: 225px;
+    text-align: center;
+    border: 5px black double;
+    /*
+    animation: meuSlide;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    */
+    animation: 3s ease-in-out 0s infinite running scala;
+}
+
+#box1:hover{
+    
+}
+
+#box1:active{
+    /*animation: 3s ease-in-out 0s infinite running meuSlide;*/
+
+}
+
+@keyframes meuSlide{
+    from{margin-left: 0%;}
+    to{margin-left: 100%;}
+}
+
+@keyframes rotacao{
+    100%{transform: rotateX(360deg);}
+}
+
+@keyframes opacidade{
+    50%{opacity: 0;}
+}
+
+@keyframes scala{
+    50%{transform: scale(0.5,0.5);}
+}
