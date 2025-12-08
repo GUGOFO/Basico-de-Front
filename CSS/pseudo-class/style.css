@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+a:link{
+    color: aquamarine;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: red;
+}
+
+button:hover{
+    background-color: lightblue;
+}
+button:active{
+    background-color: black;
+}
+
+li{
+    color: white;
+}
+/*
+li:nth-child(7){
+    background-color: purple;
+}
+*/
+
+li:nth-child(even){
+    background-color: purple;
+}
+                                                    /*SUPER IMPORTANTE PQP MUITO UTIL GOZEI*/
+li:nth-child(odd){
+    background-color: blue;
+}
+
+
+/*
+li:nth-child(3n + 1){
+    background-color: purple;
+}
+*/

@@ -1,0 +1,28 @@
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background-color: greenyellow;
+    padding: 30px; 
+    margin-top: 100px;
+    margin-left: 50%;
+
+    /*
+    Basicamente, margem é o espaçamento de um item para o outro, padding é o espaamento do item com ele mesmo
+    */
+}
+
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background-color: blue;
+    margin: 10px;
+}
+
+body{
+    background-color: aqua;
+    margin: 0px;
+}

@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-family: "Press Start 2P", "consolas",sans-serif;
+}
+
+p{
+    color: green;
+    font-family: "consolas",sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:cyan wavy underline;
+    font-size: 18px;
+}

@@ -1,0 +1,65 @@
+#box1{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: skyblue;
+
+    position: relative;
+
+    top:50px;
+    left: 50px;
+}
+#box2{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+#box3{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    top: 100px;
+    left: 100px;
+
+    position: absolute; /*Ele nem tem espaço guardado para ele, perfeito para fazer coisos voando aleatoriamente*/
+}
+
+#box4{
+    border: 1px solid;
+    height: 400px;
+    width: 400px;
+    background-color: purple;
+    position: relative;
+
+    left: 1000px;
+    top: 300px;
+}#box5{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+
+#box6{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(5, 161, 143);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+#box7{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(156, 161, 5);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
