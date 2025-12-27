@@ -1,0 +1,36 @@
+.container{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid black;
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    padding: 1em;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 10px solid rgb(146, 0, 0);
+    border-radius: 10px;
+}
+
+/*IGNORA TUDO DE TRAS*/
+
+.container{
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-evenly; /*Resposnsavel pelo main*/
+    align-items: center;  /*Resposnsavel pelo segundo*/
+    flex-wrap: wrap;
+    align-content: space-around;  /*Resposnsavel pelo segundo so quando tem wrap*/
+
+}
+
+.item-3{
+    /*flex-grow: 1;*/
+    /*flex-shrink: 0;*/
+    /*flex: 1;*/
+}
