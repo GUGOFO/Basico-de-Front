@@ -10,5 +10,5 @@ console.log(num_aleatorio);
 const min = 1;
 const max = 3;
 
-num_aleatorio = Math.floor(Math.random() * (max - min)) + 1 + min;
+num_aleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
 console.log(num_aleatorio);
