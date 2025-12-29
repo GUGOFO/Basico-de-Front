@@ -1,0 +1,10 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+#btn_envio{
+    font-size: 2em;
+    background-color: green;
+    border-radius: 15px;
+}
