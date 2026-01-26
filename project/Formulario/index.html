@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Cadastre-se</h1>
+        <button>Entrar</button>
+    </nav>
+
+    <div id="caixas">
+        <div class="caixa">
+            <label for="primeiroNome">Primeiro Nome</label>
+            <input type="text" placeholder="Joãozinho..." id="primeiroNome">
+        </div>
+        
+        <div class="caixa">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" placeholder="Souza..." id="sobrenome">
+        </div>
+
+        <div class="caixa">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="teste@gmail.com" id="email">
+        </div>
+
+        <div class="caixa">
+            <label for="celular">Celular</label>
+            <input type="tel" placeholder="16991110060" id="celular">
+        </div>
+
+        <div class="caixa">
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="1234" id="senha">
+        </div>
+
+        <div class="caixa">
+            <label for="confirmarSenha">Confirme sua senha</label>
+            <input type="password" placeholder="1234" id="confirmarSenha">
+        </div>
+    </div>
+
+    <div id="genero">
+        <div id="checkboxs">
+            <div>
+                <input type="checkbox" id="homem">
+                <label for="homem">Homem</label>    
+            </div>
+
+            <div>
+                <input type="checkbox" id="mulher">
+                <label for="mulher">Mulher</label>
+            </div>
+        
+            <div>
+                <input type="checkbox" id="outro">
+                <label for="outro">Outro</label>
+            </div>
+       
+            <div>
+                <input type="checkbox" id="naoFalar">
+                <label for="naoFalar">Prefiro não dizer</label>
+            </div>
+        </div>
+    </div>
+
+    <input type="submit" id="submit">
+
+</body>
+</html>

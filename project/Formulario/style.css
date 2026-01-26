@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  max-width: 600px; 
+  margin: 0 auto;    
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+nav button{
+    background-color: blue;
+    border: none;
+    height: 28px;
+    width: 80px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.caixa{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+#caixas{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 40px;
+    margin: 20px;
+}
+
+#caixas input{
+    height: 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.144);
+    padding: 8px;
+    border: none;
+}
+
+#caixas input:focus{
+    outline: none;
+    border: none;
+}
+
+#caixas label{
+    font-weight: bold;
+}
+
+#genero{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#checkboxs{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#checkboxs div{
+    display: flex;
+    align-items: center;
+}
+
+#submit{
+    background-color: blue;
+    border: none;
+    height: 32px;
+    width: 80%;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+
+    display: block;
+    margin: 0 auto;
+
+}
