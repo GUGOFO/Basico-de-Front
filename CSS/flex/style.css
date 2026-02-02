@@ -1,0 +1,65 @@
+body{
+    border: 8px black solid;
+    min-height: 400px;
+
+    display: flex;
+    gap: 10px;
+
+    /*Se voce quiser fazr uma navbart, muito util ter isso aq
+    */
+
+    align-items: flex-start;
+    justify-content: flex-end; 
+
+    /* Centraliza cada linha tmb, o mais redondinho, porem possivelmnete tem q dar um gap
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; Isso daqui vai controlar a centralização das linhas de itens, individualmente
+    align-content: center; Isso daqui vai controlar a centralização de TUDO*/
+
+    /*Assim que a gente faz ele ficar responsivel (com o wrap)
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    */
+
+    /* Asism que centraliza uma coluna
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+    align-items: center;
+    */
+    
+    /*Assim q se centraliza uma div*
+    display: flex;
+    justify-content: center;  tmb tem justify-content: space-evenly
+    align-items: center;*/
+
+}
+
+#box1{
+    margin-right: auto;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+}
+
+@media(max-width: 300px){
+    body{
+        flex-wrap: wrap;
+    }
+}
