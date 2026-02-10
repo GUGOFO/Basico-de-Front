@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#imagem{
+    height: 60vh;
+    border-radius: 50%;
+}
+
+#botao{
+    font-size: 3vh;
+    background-color: lightgreen;
+    border-radius: 1vh;
+}
