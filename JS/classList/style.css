@@ -1,0 +1,33 @@
+#botao{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+#botao2{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+#h1{
+    font-size: 5rem;
+}
+
+.ativo{
+    background-color: aqua;
+    color: white;
+}
+.hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    font-weight: bold;
+
+}
+
+.desabilitado{
+    background-color: grey;
+    color: rgba(170, 170, 170, 0.822);
+}
