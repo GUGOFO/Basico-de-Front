@@ -1,0 +1,15 @@
+[{
+    "nome": "BobEsponja",
+    "idade": 18,
+    "taTrabalhando": true
+},
+{
+    "nome": "patric",
+    "idade": 20,
+    "taTrabalhando": false
+},
+{
+    "nome": "lula molusco",
+    "idade": 40,
+    "taTrabalhando": true
+}]
