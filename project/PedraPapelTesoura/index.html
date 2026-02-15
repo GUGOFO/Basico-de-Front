@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Pedra - Papel - Tesoura</h1>
+
+    <div id="possibilidades">
+        <div class="opção" onclick="jogo(`pedra`)">🗿</div>
+        <div class="opção" onclick="jogo(`papel`)">📄</div>
+        <div class="opção" onclick="jogo(`tesoura`)">✂️</div>
+    </div>
+
+    <div id="escolhas">
+        <h1 id="escolhaPlayer">Player: -----</h1>
+        <h1 id="escolhaComputador">Computador: -----</h1>
+    </div>
+
+    <h1 id="resultado">RESULTADO!!!!!!</h1>
+
+    <div id="score">
+        <h1 id="vitoriasPlayer">Player score: <span style="color: green;">0</span></h1>
+        <h1 id="vitoriasMaquina">Computador score: <span style="color: red;">0</span></h1>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
