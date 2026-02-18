@@ -13,5 +13,4 @@ async function getDados(){
     catch(error){
         console.error(error)
     }
-
 }
