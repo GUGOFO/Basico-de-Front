@@ -5,12 +5,14 @@ body{
     flex-direction: column;
 
     gap: 20px;
-    margin: 30px 0px;
+    margin: 30px 20px;
+    background-color: rgb(0, 0, 0);
 }
 
-h1, p, div{
+h1, p, div, input{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 #tituloDaPagina{
@@ -21,9 +23,9 @@ h1, p, div{
 .divCard{
     min-height: 200px;
     max-width: 700px;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 20%);
     border-radius: 15px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
     
     display: flex;
     justify-content: center;
@@ -62,7 +64,7 @@ h1, p, div{
     border: 2px solid rgb(117, 0, 0);
 }
 
-#btnAdicionar{
+.btnAdicionar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,12 +79,59 @@ h1, p, div{
     color: white;
 }
 
-#btnAdicionar:hover{
+.btnAdicionar:hover{
     background-color: rgb(8, 194, 8);
     border: 2px solid rgb(0, 102, 0);
 }
 
-#btnAdicionar:active{
+.btnAdicionar:active{
     background-color: rgb(8, 165, 8);
     border: 2px solid rgb(0, 102, 0); 
+}
+
+#divAddCard{
+    min-height: 200px;
+    max-width: 700px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+#divAddCard h1{
+    margin: 0;
+}
+
+input{
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.75);
+    background-color: black;
+}
+
+input:focus {
+    outline: none;
+}
+
+#divEscondida{
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
