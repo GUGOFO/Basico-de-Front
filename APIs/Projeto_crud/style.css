@@ -52,6 +52,7 @@ h1, p, div, input{
     height: 50px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .btnDeletar:hover{
@@ -68,15 +69,16 @@ h1, p, div, input{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     min-width: 150px;
     background-color: rgb(10, 216, 10);
     border: 2px solid green;
     border-radius: 15px;
-
+    
     height: 50px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 .btnAdicionar:hover{
