@@ -4,8 +4,8 @@ const btnSubmit = document.getElementById("btnSubmit");
 const textoNada = document.getElementById("textoNada");
 let historicoDeConversas = [];
 
-const geminiKey = "SUA API AQUI SEU LINDO"; 
-const modelo = "gemini-2.5-flash";
+const geminiKey = "AIzaSyAr24hrbUly7wFK90a2TGhl_gJTM9nYsN8"; 
+const modelo = "gemini-2.0-flash-lite";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${geminiKey}`;
 
 form.addEventListener("submit", async evento => {
@@ -18,10 +18,8 @@ form.addEventListener("submit", async evento => {
     }
     else textoNada.style.display = "none"
 
-
     inputTexto.disabled = true
     btnSubmit.disabled = true
-
 
     historicoDeConversas.push({
         role: "user",
@@ -40,7 +38,17 @@ form.addEventListener("submit", async evento => {
         if(!resposta.ok) throw new Error(resposta.status)
         
         const dados = await resposta.json();
-        console.log(dados.candidates[0].content.parts[0].text)
+        const respostaDaIA = dados.candidates[0].content.parts[0].text;
+
+        console.log(respostaDaIA)
+
+        historicoDeConversas.push({
+            role: "model",
+            parts: [{ text: respostaDaIA }]
+        })
+    
+            inputTexto.disabled = true
+            btnSubmit.disabled = true
     }
     catch(error){
         console.error(error);
