@@ -110,6 +110,7 @@ p{
     border: none;
     border-radius: 50%;
     text-align: center;
+    cursor: pointer;
 }
 
 #btnSubmit:hover{
@@ -118,4 +119,13 @@ p{
 
 #btnSubmit:active{
     background-color: hsl(0, 0%, 80%);
+}
+
+#btnSubmit:disabled{
+    background-color: hsl(0, 0%, 80%);
+    cursor: auto;
+}
+
+#textoNada{
+    display: none;
 }
