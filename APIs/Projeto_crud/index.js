@@ -21,7 +21,7 @@ async function getNotesCriação(){
         }
     }
     catch(error){
-        console.error(error);
+        console.error(`Erro no GetNotesCriacao -> ${error}`);
     }
 }
 
