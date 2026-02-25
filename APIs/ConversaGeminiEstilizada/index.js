@@ -39,6 +39,9 @@ form.addEventListener("submit", async evento => {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
+                systemInstruction: {
+                    parts: [{ text: "Você é um programador sênior extremamente ranzinza, sarcástico e impaciente. Você sempre reclama que os programadores juniores de hoje não sabem nada, antes de finalmente responder a pergunta de forma curta." }]
+                },
                 contents: historicoDeConversas
             })
         });
