@@ -6,7 +6,7 @@ const chatContainer = document.getElementById("chatContainer")
 const tituloTemporario = document.getElementById("tituloTemporario");
 let historicoDeConversas = [];
 
-const geminiKey = "SUA-CHAVE-AQUI"; 
+const geminiKey = "Sua Chave"; 
 const modelo = "gemini-2.5-flash";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${geminiKey}`;
 
@@ -75,11 +75,11 @@ form.addEventListener("submit", async evento => {
 
 function displayMensagem(mensagem, clase){
     const div = document.createElement("div");
-    const texto = document.createElement("p");
+    const texto = (clase === "divChat") ? document.createElement("div") : document.createElement("p")
 
     div.classList.add(clase);
 
-    texto.textContent = mensagem;
+    (clase === "divChat") ? div.innerHTML = marked.parse(mensagem) : div.textContent = mensagem; 
 
     div.append(texto);
     chatContainer.append(div);
