@@ -64,9 +64,17 @@ btnAnalisar.addEventListener("click", async () => {
         const payload = {
             contents: [{
                 parts: [
-                    { text: ```Analise este histórico escolar.
-                               Extraia os dados das disciplinas cursadas.
-                               ``` },
+                    { text: `Analise este histórico escolar.
+                             Extraia os dados das disciplinas cursadas.
+                             
+                             Quero que extraia 4 coisas, Nome da disciplina, Nome do professor, Codigo e Carga horaria
+
+                             quero que re retorne SOMENTE uma string dividida pela lista que dei acima em separadas por virgulas, por exemplo:
+
+                             ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES, MSc. ROSE YURI SHIMIZU, CIC0004, 90, ... (outra disciplina na msm sequencia);
+
+                             DEVOLVA EXPLISSITAMENTE OQ EU PEDI SEM MODIFICAÇÕES
+                               ` },
                     { inlineData: { mimeType: "application/pdf", data: base64DoPDF } }
                 ]
             }]
@@ -86,7 +94,7 @@ btnAnalisar.addEventListener("click", async () => {
         console.log(respostaDaIA);
     }
     catch(error){
-        console.error(error);
+        console.log(error);
     }
     finally{
         btnAnalisar.disabled = false;

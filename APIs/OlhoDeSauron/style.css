@@ -81,3 +81,54 @@ h3{
     color:#006633;
     font-size: 15px;
 }
+
+#diciplinas{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+    overflow-y: auto;
+    width: 100vw;
+    padding: 10px;
+
+    align-self: flex-start; 
+    height: 100vh;     
+    box-sizing: border-box;
+}
+
+.diciplina{
+    background: linear-gradient(180deg, hsl(150, 100%, 30%), hsl(210, 100%, 30%));
+    padding: 30px;
+    border-radius: 15px;
+    
+    max-width: 600px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.cargaHoraria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #006633;
+    border-radius: 50%;
+    border: white dashed 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#tituloDisciplinas{
+    color: #006633;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px hsla(210, 100%, 30%, 0.2);
+}
