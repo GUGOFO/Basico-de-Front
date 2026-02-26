@@ -3,8 +3,12 @@ const inputFile = document.getElementById("inputImage");
 const textoDropzone = dropzone.querySelector("h2"); 
 const btnAnalisar = document.getElementById("btnAnalisar");
 
+const envioSection = document.getElementById("envio");
+const disciplinasSection = document.getElementById("diciplinas");
+const tituloDisciplinas = document.getElementById("tituloDisciplinas");
+
 const geminiKey = ""; 
-const modelo = "gemini-2.5-flash";
+const modelo = "gemini-3-flash-preview";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${geminiKey}`;
 
 
@@ -69,8 +73,9 @@ btnAnalisar.addEventListener("click", async () => {
                              
                              Quero que extraia 4 coisas, Nome da disciplina, Nome do professor, Codigo e Carga horaria
 
-                             quero que re retorne SOMENTE uma string dividida pela lista que dei acima em separadas por virgulas, por exemplo:
-
+                             quero que re retorne SOMENTE uma string dividida pela lista que dei acima em separadas por virgulas, alm disso, cada disciplina ficara em uma nova linha (com um /n no final)
+                              
+                             por exemplo:
                              ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES, MSc. ROSE YURI SHIMIZU, CIC0004, 90, ... (outra disciplina na msm sequencia);
 
                              DEVOLVA EXPLISSITAMENTE OQ EU PEDI SEM MODIFICAÇÕES
@@ -87,11 +92,45 @@ btnAnalisar.addEventListener("click", async () => {
         });
 
         if(!resposta.ok) throw new Error(`Erro requisição HTTP: ${resposta.status}`);
-
+        
         const dados = await resposta.json();
         const respostaDaIA = dados.candidates[0].content.parts[0].text;
-
         console.log(respostaDaIA);
+
+        envioSection.style.display = "none";
+        disciplinasSection.style.display = "flex";
+
+        disciplinasSection.innerHTML = "";
+        disciplinasSection.appendChild(tituloDisciplinas);
+
+        const linhas = respostaDaIA.split('\n');
+
+        linhas.forEach(linha => {
+            if (linha.trim() === "") return;
+
+            const partes = linha.split(','); 
+            
+            if (partes.length >= 4) {
+                const nome = partes[0].trim();
+                const prof = partes[1].trim();
+                const cod = partes[2].trim();
+                const ch = partes[3].trim();
+
+                const divDisciplina = document.createElement("div");
+                divDisciplina.classList.add("diciplina");
+
+                divDisciplina.innerHTML = `
+                    <div class="divNomes">
+                        <h1 class="nomeDaDisciplina">${nome}</h1>
+                        <h2 class="professorDaDisciplina">${prof}</h2>
+                        <h2 class="codigoDaDisciplina">${cod}</h2>
+                    </div>
+                    <div class="cargaHoraria">${ch}</div>
+                `;
+                disciplinasSection.appendChild(divDisciplina);
+            }
+        });
+
     }
     catch(error){
         console.log(error);

@@ -102,6 +102,7 @@ h3{
     background: linear-gradient(180deg, hsl(150, 100%, 30%), hsl(210, 100%, 30%));
     padding: 30px;
     border-radius: 15px;
+    gap: 30px;
     
     max-width: 600px;
     
