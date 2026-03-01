@@ -7,6 +7,7 @@ body{
     height: 100vh;
     margin: 0;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #divGerador{
@@ -15,14 +16,32 @@ body{
     align-items: center;
     flex-direction: column;
 
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(288, 86%, 20%);
     border: 4px solid hsla(0, 0%, 0%, 0.5);
     border-radius: 15px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(114, 10, 173, 0.5);
     padding: 30px;
     width: 600px;
 }
 
 #titulo{
+    text-shadow: 0px 0px 10px hsl(300, 100%, 18%);
+}
 
+#inputDoUsuario{
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: hsl(0, 0%, 90%);
+}
+
+#inputDoUsuario:hover{
+    background-color: hsl(0, 0%, 80%);
+}
+
+#inputDoUsuario:active{
+    background-color: hsl(0, 0%, 70%);
 }
