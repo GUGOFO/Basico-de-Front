@@ -7,7 +7,7 @@ const envioSection = document.getElementById("envio");
 const disciplinasSection = document.getElementById("diciplinas");
 const tituloDisciplinas = document.getElementById("tituloDisciplinas");
 
-const geminiKey = ""; 
+const geminiKey = "SUA CHAVE AQUI SEU LINDO"; 
 const modelo = "gemini-3-flash-preview";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${geminiKey}`;
 
