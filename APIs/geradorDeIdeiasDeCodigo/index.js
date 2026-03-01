@@ -3,7 +3,7 @@ const form = document.getElementById("divGerador")
 const btn = document.getElementById("inputDoUsuario")
 let historicoDeConversas = [];
 
-const geminiKey = "SUA CHAVE AQUIII"; 
+const geminiKey = "SUA CHAVE APII"; 
 const modelo = "gemini-2.5-flash";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${geminiKey}`;
 
@@ -24,6 +24,7 @@ form.addEventListener("submit", async e => {
                                ele esta em um nivel iniciante / moderado
                                 
                                Não é necessário ter detalhes, quero que voce retorne o titulo da ideia seguido por POUCAS especificações de dsine (NO MAXIMO UM PARAGRAFO SEM ENROLAÇÃO)`
+
         
         const resposta = await fetch(url, {
             method: "POST",
