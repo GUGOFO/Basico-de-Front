@@ -1,0 +1,25 @@
+body{
+    width: 100vw;
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: relative;
+    width: max-content;
+}
+
+h1::after{
+    content: "";
+    height: .3rem;
+    width: 100%;
+    background-image: linear-gradient(to right, blue, red);
+    border-radius: 15px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
