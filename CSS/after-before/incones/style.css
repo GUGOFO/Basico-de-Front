@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(0, 0%, 90%);
+    font-family: sans-serif; /* Deixa o texto da tooltip mais bonito */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+a {
+    background-color: white;
+    font-size: 10vh;
+    width: 10vh; 
+    height: 10vh; 
+    padding: 2vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    color: black;
+    position: relative;
+    text-decoration: none;
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+a:hover {
+    background-color: var(--color);
+    color: white;
+}
+
+a::before {
+    content: attr(data-name);
+
+    position: absolute;
+    background-color: var(--color);
+    color: white;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    top: -60px; 
+    left: 50%; 
+    translate: -50% 0; 
+    opacity: 0;
+    transition: 200ms ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    translate: -50% 0;
+    border-top: 10px solid var(--color);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    transition: scale 200ms ease .1s; 
+    scale: 0;
+    opacity: 0;
+    transform-origin: top;
+}
+
+a:hover::before, a:hover::after {
+    scale: 1;
+    opacity: 1;
+}
